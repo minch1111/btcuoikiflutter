@@ -95,7 +95,7 @@ class _ListScreenState extends State<ListScreen> {
                                     context: context,
                                     builder: (context) => AlertDialog(
                                       title: const Text(
-                                          'Are You Sure Remove This Student'),
+                                          'Do You Sure Remove This Student ?'),
                                       actions: [
                                         TextButton(
                                             onPressed: () => {
