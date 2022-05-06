@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage> {
             Padding(
               padding: const EdgeInsets.all(20),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
+                mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   ButtonNavigator(
@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
                     textStyle: MaterialStateProperty.all(
                       PrimaryFont.medium(size.height * 0.03)
                     ),
-                    content: 'Add New',
+                    content: 'CREATE',
                     route: '/add',
                     args: FormArguments(),
                   ),
@@ -58,7 +58,7 @@ class _HomePageState extends State<HomePage> {
                     textStyle: MaterialStateProperty.all(
                       PrimaryFont.medium(size.height * 0.03)
                     ),
-                    content: 'View List',
+                    content: 'STUDENT LIST',
                     route: '$ListScreen',
                   ),
                 ],
@@ -79,7 +79,7 @@ class HomeBackground extends StatelessWidget {
     return Align(
       alignment: Alignment.bottomCenter,
       child: FractionallySizedBox(
-        heightFactor: 0.6,
+        heightFactor: 0.4,
         widthFactor: 1,
         child: FittedBox(
           fit: BoxFit.contain,
